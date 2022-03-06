@@ -11,7 +11,7 @@ K29声卡ALC269 仿冒ID为28
 
 风扇转速显示正常
 在DSDT中H-EC上面添加SMCD
-                Device (SMCD)
+`                Device (SMCD)
                 {
                     Name (_HID, "FAN00000")  // _HID: Hardware ID
                     Name (_CID, "monitor")  // _CID: Compatible ID
@@ -26,7 +26,7 @@ K29声卡ALC269 仿冒ID为28
                         Local0 |= ^^H_EC.FSPD /* \_SB_.PCI0.LPCB.H_EC.FSPD */
                         Return (Local0)
                     }
-                }
+                }`
 并在DeviceProperties内建 风扇转速显示正常
 ![截屏2022-03-06 上午11 36 38](https://user-images.githubusercontent.com/86851841/156908140-7111beb5-dfd0-43e7-9fbb-0f80ae1e7e2e.png)
 
@@ -38,9 +38,4 @@ CPU为i7-3630QM 非同款CPU请勿加载ACPI/ssdt.aml
 
 CPU睿频经CPUFriend工具生成ACPI/SSDT_data.aml 不知道为什么CPUFriend无法加载所以才用此方式实现睿频。
 
-EFI修改来源“@黑果小兵 镜像”
-
-目前指纹和风扇转速无法使用，
-
-多次修改DSDT里面的H-EC都不能显示（当然也不能控制转速），所以长时间玩游戏会有些热，不会出现死机等其它故障
 
