@@ -9,7 +9,11 @@ K29声卡ALC269 仿冒ID为28
 
 音量+【FN+Right】 音量-【FN+Left】
 
-不可用：指纹、风扇转速不显示
+风扇转速显示正常
+
+![截屏2022-03-06 上午11 34 33](https://user-images.githubusercontent.com/86851841/156908108-6bffdabd-d46b-4a33-aae6-2169b5b258f2.png)
+
+不可用：指纹
 
 CPU为i7-3630QM 非同款CPU请勿加载ACPI/ssdt.aml 
 
