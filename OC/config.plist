@@ -1790,7 +1790,7 @@
 			<key>ARTFrequency</key>
 			<integer>0</integer>
 			<key>BoardProduct</key>
-			<string>Mac-3CBD00234E554E41</string>
+			<string></string>
 			<key>BoardRevision</key>
 			<data></data>
 			<key>DevicePathsSupported</key>
@@ -1802,9 +1802,9 @@
 			<key>PlatformName</key>
 			<string></string>
 			<key>SmcBranch</key>
-			<data>ajQ1AAAAAAA=</data>
+			<data></data>
 			<key>SmcPlatform</key>
-			<data>ZDQ1AAAAAAA=</data>
+			<data></data>
 			<key>SmcRevision</key>
 			<data>AhgPAAAV</data>
 			<key>StartupPowerEvents</key>
@@ -1812,9 +1812,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro11,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02LQLYPG86R</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>6C25CFA6-4380-4394-8416-82314D4CB6A7</string>
+			<string></string>
 		</dict>
 		<key>Generic</key>
 		<dict>
@@ -1823,7 +1823,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C023472704NFJQW8C</string>
+			<string></string>
 			<key>ProcessorType</key>
 			<integer>1797</integer>
 			<key>ROM</key>
@@ -1835,9 +1835,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro11,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02LQLYPG86R</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>6C25CFA6-4380-4394-8416-82314D4CB6A7</string>
+			<string></string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
