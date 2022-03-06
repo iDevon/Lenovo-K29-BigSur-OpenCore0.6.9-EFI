@@ -1,6 +1,4 @@
 # Lenovo-K29-Big-Sur-opencore0.69-EFI
-Lenovo K29 Big Sur opencore0.69 EFI
-
 可使用设备及功能：网卡、无线、蓝牙、触控板、摄像头、读卡器、CPU睿频、隔空投送、合盖睡眠、唤醒、投屏、亮度调整、音量调整
 
 K29声卡ALC269 仿冒ID为28
@@ -29,6 +27,17 @@ Device (SMCD)
                     }
                 }
 ```
+查找
+```
+                        Offset (0x95), 
+                        FSP1,   8, 
+```
+修改为：
+```
+                        Offset (0x94), 
+                        FSPD,   8, 
+                        FSP1,   8, 
+```
 并在DeviceProperties内建 风扇转速显示正常
 ![截屏2022-03-06 上午11 36 38](https://user-images.githubusercontent.com/86851841/156908140-7111beb5-dfd0-43e7-9fbb-0f80ae1e7e2e.png)
 
@@ -36,8 +45,9 @@ Device (SMCD)
 
 不可用：指纹
 
-CPU为i7-3630QM 非同款CPU请勿加载ACPI/ssdt.aml 
-
-CPU睿频经CPUFriend工具生成ACPI/SSDT_data.aml 不知道为什么CPUFriend无法加载所以才用此方式实现睿频。
-
-
+用`ssdtPRGen.sh-17.0`生成CPU变频配置文件
+CPU为i7-3630QM 非同款CPU请勿加载`ssdt.aml`
+CPU开启睿频用`CPUFriend`工具生成`CPUFriendDataProvider.kext`或`SSDT_data.aml`不可同时使用。
+工具下载：
+ssdtPRGen [https://github.com/Piker-Alpha/ssdtPRGen.sh](url)
+CPUFriend [https://github.com/acidanthera/CPUFriend](url)
